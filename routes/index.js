@@ -11,7 +11,7 @@ var namesAC = ac.connectAutocomplete(),
     airportNames = {},
     airportCodes = {};
 
-fs.readFile('data/airport-codes.csv', function(err, data) {
+fs.readFile('data/airport-codes.dat', function(err, data) {
   var airports = [];
 
   _.each(data.toString().split('\n'), function(a) {
