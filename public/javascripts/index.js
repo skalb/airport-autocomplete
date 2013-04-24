@@ -2,7 +2,7 @@
   var termTemplate = "<span class='ui-autocomplete-term'>$1</span>";
 
   $(document).ready(function() {
-    $("#origin, #destination").autocomplete({
+    $("#origin").autocomplete({
       source: "/airports",
       minLength: 2,
       open: function(e,ui) {
